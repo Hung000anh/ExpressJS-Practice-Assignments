@@ -55,5 +55,5 @@
   * `nodemon`: Tool for automatically restarting the server on code changes.
 
 
-## Preview
+## 🖼️ Preview
 ![Preview](screenshots/image.png)
