@@ -44,3 +44,7 @@ ExpressJS-Practice-Assignments/
 ---
 
 > This is a personal learning project. Feel free to fork and adapt it to your own learning style!
+
+
+## Preview
+![Preview](01-setup-intro/screenshots/image.png)
