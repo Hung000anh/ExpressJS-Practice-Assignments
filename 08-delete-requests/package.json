@@ -1,0 +1,17 @@
+{
+  "name": "08-delete-requests",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node ./src/index.mjs",
+    "dev": "nodemon ./src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
