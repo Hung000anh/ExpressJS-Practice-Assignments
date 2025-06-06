@@ -9,7 +9,6 @@ This repository is a hands-on learning project based on the YouTube tutorial:
 The project is divided into folders corresponding to each major topic:
 
 ```
-
 ExpressJS-Practice-Assignments/
 ├── 01-setup-intro/
 ├── 02-get-requests/
