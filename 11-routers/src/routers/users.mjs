@@ -6,11 +6,6 @@ import { validate } from '../middleware/validate.mjs';
 let userList = [...users];
 let userRouter = Router();
 
-// GET /
-userRouter.get('/', (req, res)=>{
-    res.send("hello world");
-})
-
 // Get /user (filter name, employee)
 userRouter.get('/users', searchUserValidator, validate, (req, res) => {
 
