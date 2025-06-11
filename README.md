@@ -23,14 +23,13 @@ ExpressJS-Practice-Assignments/
 ├── 11-routers/
 ├── 12-cookies/
 ├── 13-sessions/
-├── 14-sessions-2/
-├── 15-auth-passport/
-├── 16-mongodb/
-├── 17-password-hashing/
-├── 18-session-store/
-├── 19-oauth2/
-├── 20-unit-testing/
-└── 21-e2e-testing/
+├── 14-auth-passport/
+├── 15-mongodb/
+├── 16-password-hashing/
+├── 17-session-store/
+├── 18-oauth2/
+├── 19-unit-testing/
+└── 20-e2e-testing/
 
 ````
 
