@@ -18,4 +18,45 @@ router.get('/:id', (req, res) => {
   res.json(user);
 });
 
+// CREATE
+router.post('/', (req, res) => {
+  const { username, age, isEmployed, password } = req.body;
+  if (!username || !age || isEmployed === undefined || !password) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
+
+  const newUser = {
+    id: users.length + 1,
+    username,
+    age,
+    isEmployed,
+    password
+  };
+  users.push(newUser);
+  res.status(201).json(newUser);
+});
+
+// UPDATE
+router.put('/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const userIndex = users.findIndex(u => u.id === id);
+
+  if (userIndex === -1) return res.status(404).json({ error: 'User not found' });
+
+  // Gộp dữ liệu mới vào user cũ
+  users[userIndex] = { ...users[userIndex], ...req.body };
+  res.json(users[userIndex]);
+});
+
+// DELETE
+router.delete('/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const userIndex = users.findIndex(u => u.id === id);
+
+  if (userIndex === -1) return res.status(404).json({ error: 'User not found' });
+
+  const deletedUser = users.splice(userIndex, 1);
+  res.json(deletedUser[0]);
+});
+
 module.exports = router;
